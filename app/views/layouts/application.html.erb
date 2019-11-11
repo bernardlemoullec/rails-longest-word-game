@@ -4,12 +4,37 @@
     <title>RailsLongestWordGame</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+
+    <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://media1.tenor.com/images/52ab4a206925a8a742c53521e879ec30/tenor.gif);">
+      <div class="container">
+        <h1>Des chiffres et des lettres</h1>
+      </div>
+    </div>
+
+    <br>
+
     <%= yield %>
+
+    <br>
+
+    <div class="footer">
+      <div class="footer-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <br>
+      <div class="footer-copyright">
+        <a class="btn btn-ghost" target="_blank" href="https://www.youtube.com/watch?v=XBxIAkWJrv8">Countdown</a>
+      </div>
+    </div>
+
   </body>
 </html>
